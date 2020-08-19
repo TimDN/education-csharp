@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForLoop", "LoopDemo\ForLoop.csproj", "{C92B5ED3-2650-4DE3-A383-8122B4D4B0CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhileLoop", "WhileLoop\WhileLoop.csproj", "{2D9AB611-C2F9-4AC3-B98D-EA95A918B961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoWhileLoop", "DoWhileLoop\DoWhileLoop.csproj", "{797E898F-5EFF-47A2-86C2-B63DFEE8BF06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C92B5ED3-2650-4DE3-A383-8122B4D4B0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92B5ED3-2650-4DE3-A383-8122B4D4B0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92B5ED3-2650-4DE3-A383-8122B4D4B0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92B5ED3-2650-4DE3-A383-8122B4D4B0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D9AB611-C2F9-4AC3-B98D-EA95A918B961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D9AB611-C2F9-4AC3-B98D-EA95A918B961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D9AB611-C2F9-4AC3-B98D-EA95A918B961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D9AB611-C2F9-4AC3-B98D-EA95A918B961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{797E898F-5EFF-47A2-86C2-B63DFEE8BF06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797E898F-5EFF-47A2-86C2-B63DFEE8BF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797E898F-5EFF-47A2-86C2-B63DFEE8BF06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797E898F-5EFF-47A2-86C2-B63DFEE8BF06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62CC8BFF-1581-402D-88BE-357919E3F320}
+	EndGlobalSection
+EndGlobal
