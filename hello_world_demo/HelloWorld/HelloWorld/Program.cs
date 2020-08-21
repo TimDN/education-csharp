@@ -1,13 +1,10 @@
 ﻿using System;
 
-namespace HelloWorld
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            //This is a comment
-            Console.WriteLine("Hello World!");
-        }
+        // This is a comment
+        Console.WriteLine("Hello World!");
     }
 }
