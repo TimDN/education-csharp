@@ -76,6 +76,18 @@ namespace methods_demo
             Console.WriteLine(numbersSum);
         }
 
+        //void outparameter no return needed
+        static void HelloWorld()
+        {
+            Console.WriteLine("Hello world");
+        }
+
+        //string outparameter must return data of type string
+        static string GetHello()
+        {
+            return "Hello";
+        }
+
         static void Main(string[] args)
         {
             InitDemo();
