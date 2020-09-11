@@ -88,8 +88,36 @@ namespace methods_demo
             return "Hello";
         }
 
+        static bool TryGetName(out string name)
+        {
+            //parameter using out must have a value assigned
+            name = "Foo";
+            return true;
+        }
+
+        static void UsingOut()
+        {
+            string name = "";
+            var result = TryGetName(out name);
+            Console.WriteLine(name); //prints Foo
+        }
+
+        static void IncreaseAge(ref int age)
+        {
+            age++;
+        }
+
+        static void UsingRef()
+        {
+            int age = 10;
+            IncreaseAge(ref age);
+            Console.WriteLine(age); // prints 11
+        }
+
         static void Main(string[] args)
         {
+            UsingOut();
+            UsingRef();
             InitDemo();
             SumDemo();
             NoMethodDemo();
