@@ -61,8 +61,29 @@ namespace error_handling_demo
             return number;
         }
 
+        static void First()
+        {
+            Second();
+        }
+
+        static void Second()
+        {
+            Third();
+        }
+
+        static void Third()
+        {
+            Throws();
+        }
+
+        static void Throws()
+        {
+            throw new Exception();
+        }
+
         static void Main(string[] args)
         {
+            First();
             //HandleError();
             FinallyExample();
         }
