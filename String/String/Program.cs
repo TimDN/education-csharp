@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualBasic.CompilerServices;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -11,6 +12,9 @@ namespace String
     {
         static void Main(string[] args)
         {
+            var input = "Hello World Foo Bar";
+            input = RemoveSpaces(input);
+
             StringBuilderExample();
             StringBuilderEditExample();
             UpperLowerCase();
@@ -19,6 +23,7 @@ namespace String
             EmptyString();
             SplitExample();
             PrintExample();
+            EqualsCase();
         }
 
         static void PrintExample()
@@ -81,7 +86,11 @@ namespace String
             if (lower.Length == 1)
                 return char.ToUpper(lower[0]).ToString();
             else
-                return char.ToUpper(lower[0]) + lower.Substring(1);
+            {
+                var upperCharacter = char.ToUpper(lower[0]);
+                var wordExceptFirstChar = lower.Substring(1);
+                return upperCharacter + wordExceptFirstChar;
+            }
         }
 
         static void FixSentence()
@@ -100,12 +109,34 @@ namespace String
         static void ExtraExample()
         {
             string helloWorld = "Howdy";
-            helloWorld = helloWorld.Insert(5, " World");
+            helloWorld = helloWorld.Insert(helloWorld.Length, " World");
             Console.WriteLine(helloWorld);//prints Howdy World
             helloWorld = helloWorld.Replace("Howdy", "Hello");
             Console.WriteLine(helloWorld);//prints Hello World
-            helloWorld = helloWorld.Remove(5, 1);
+            
             Console.WriteLine(helloWorld);//prints HelloWorld
+        }
+
+        static string RemoveSpaces(string input)
+        {
+            var index = input.IndexOf(" ");
+            while (index != -1)
+            {
+                input = input.Remove(index, 1);
+                index = input.IndexOf(" ");
+            }
+            return input;
+        }
+
+        static void EqualsCase()
+        {
+            var string1 = "ja";
+            var string2 = "Ja";
+
+            if(string.Equals(string1, string2, StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine("Equals"); // Will be printed
+            }
         }
 
         static void EmptyString()
