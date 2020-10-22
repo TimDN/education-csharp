@@ -15,11 +15,11 @@ namespace error_handling_demo
             try
             {
                 DivideByZero();
+                Console.WriteLine("Divide completed");
             }
-            catch (DivideByZeroException e)
+            catch (ArgumentException e)
             {
                 //Handle error by printing human readable error
-                Console.WriteLine("Can not divide by zero");
                 Console.WriteLine(e); // print error message with stack log
             }
         }
@@ -83,8 +83,15 @@ namespace error_handling_demo
 
         static void Main(string[] args)
         {
-            First();
-            //HandleError();
+            //First();
+            try
+            {
+                HandleError();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
             FinallyExample();
         }
     }
